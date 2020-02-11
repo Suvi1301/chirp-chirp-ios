@@ -1,1 +1,7 @@
-target 'chirp-chirp'
+target 'chirp-chirp' do
+  use_frameworks!
+
+pod 'Alamofire'
+pod 'RxAlamofire'
+
+end

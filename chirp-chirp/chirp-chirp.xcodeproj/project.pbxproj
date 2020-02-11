@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DE67AF1BCFDC774C641986F /* libPods-chirp-chirp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAC8822EDABC6BB9FB2AC51 /* libPods-chirp-chirp.a */; };
+		07CF7131CD1FCD9269C04286 /* Pods_chirp_chirp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42F64E5BE09329060A9E846 /* Pods_chirp_chirp.framework */; };
 		1594D0ED239BE9970073CC84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1594D0EC239BE9970073CC84 /* AppDelegate.swift */; };
 		1594D0EF239BE9970073CC84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1594D0EE239BE9970073CC84 /* SceneDelegate.swift */; };
 		1594D0F1239BE9970073CC84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1594D0F0239BE9970073CC84 /* ContentView.swift */; };
@@ -21,6 +21,7 @@
 		15DD990E23E4D33800D5E717 /* Extensions+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DD990D23E4D33800D5E717 /* Extensions+Date.swift */; };
 		15DD991023E4D8C900D5E717 /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DD990F23E4D8C900D5E717 /* Recording.swift */; };
 		15DD991223E4DD3B00D5E717 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DD991123E4DD3B00D5E717 /* AudioPlayer.swift */; };
+		15F47DAD23F374F300807BFB /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F47DAC23F374F300807BFB /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,9 +61,10 @@
 		15DD990D23E4D33800D5E717 /* Extensions+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+Date.swift"; sourceTree = "<group>"; };
 		15DD990F23E4D8C900D5E717 /* Recording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recording.swift; sourceTree = "<group>"; };
 		15DD991123E4DD3B00D5E717 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
-		3DAC8822EDABC6BB9FB2AC51 /* libPods-chirp-chirp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-chirp-chirp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15F47DAC23F374F300807BFB /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		3F9D120157CC99EE6A7661E4 /* Pods-chirp-chirp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chirp-chirp.debug.xcconfig"; path = "Target Support Files/Pods-chirp-chirp/Pods-chirp-chirp.debug.xcconfig"; sourceTree = "<group>"; };
 		48A8B6C707CF50F888DCD229 /* Pods-chirp-chirp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chirp-chirp.release.xcconfig"; path = "Target Support Files/Pods-chirp-chirp/Pods-chirp-chirp.release.xcconfig"; sourceTree = "<group>"; };
+		F42F64E5BE09329060A9E846 /* Pods_chirp_chirp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chirp_chirp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DE67AF1BCFDC774C641986F /* libPods-chirp-chirp.a in Frameworks */,
+				07CF7131CD1FCD9269C04286 /* Pods_chirp_chirp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +105,7 @@
 		04ABBA895965E8FB9A64537B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3DAC8822EDABC6BB9FB2AC51 /* libPods-chirp-chirp.a */,
+				F42F64E5BE09329060A9E846 /* Pods_chirp_chirp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,6 +139,7 @@
 				1594D0EE239BE9970073CC84 /* SceneDelegate.swift */,
 				15DD991423E502A500D5E717 /* Views */,
 				15DD991323E5026900D5E717 /* Audio */,
+				15F47DAE23F3768E00807BFB /* Service */,
 				15DD991623E5033D00D5E717 /* Extensions */,
 				1594D0F2239BE9970073CC84 /* Assets.xcassets */,
 				1594D0F7239BE9970073CC84 /* LaunchScreen.storyboard */,
@@ -199,6 +202,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		15F47DAE23F3768E00807BFB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				15F47DAC23F374F300807BFB /* APIService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -210,6 +221,7 @@
 				1594D0E5239BE9970073CC84 /* Sources */,
 				1594D0E6239BE9970073CC84 /* Frameworks */,
 				1594D0E7239BE9970073CC84 /* Resources */,
+				2A9D114A4C9C7DA7440F36E8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -327,6 +339,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2A9D114A4C9C7DA7440F36E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chirp-chirp/Pods-chirp-chirp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chirp-chirp/Pods-chirp-chirp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chirp-chirp/Pods-chirp-chirp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9D7C678A5FC39A833BEA22EB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -363,6 +392,7 @@
 				1594D0EF239BE9970073CC84 /* SceneDelegate.swift in Sources */,
 				15DD990A23E4CCBC00D5E717 /* AudioRecorder.swift in Sources */,
 				15DD991023E4D8C900D5E717 /* Recording.swift in Sources */,
+				15F47DAD23F374F300807BFB /* APIService.swift in Sources */,
 				1594D0F1239BE9970073CC84 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

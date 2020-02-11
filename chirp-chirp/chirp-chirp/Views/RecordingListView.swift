@@ -43,6 +43,7 @@ struct RecordingRow: View {
   var audioLength: Float64
   
   @ObservedObject var audioPlayer = AudioPlayer()
+  @ObservedObject var apiService = APIService()
   
   var body: some View {
     HStack {
@@ -67,7 +68,7 @@ struct RecordingRow: View {
       }
       Spacer()
       Button(action: {
-        print("classify")}) {
+        self.apiService.predict(fileURL: self.audioURL)}) {
           Image(systemName: "magnifyingglass.circle.fill")
             .imageScale(.large)
       }
