@@ -19,7 +19,7 @@ struct ContentView: View {
         RecordingListView(audioRecorder: audioRecorder)
         if audioRecorder.recording {
           Button(action: {self.audioRecorder.stopRecording()}) {
-            Image(systemName: "stop.fill")
+            Image(systemName: "stop")
               .resizable()
               .aspectRatio(contentMode: .fill)
               .frame(width: 100, height: 100)

@@ -3,5 +3,6 @@ target 'chirp-chirp' do
 
 pod 'Alamofire'
 pod 'RxAlamofire'
+pod 'SwiftyJSON'
 
 end
