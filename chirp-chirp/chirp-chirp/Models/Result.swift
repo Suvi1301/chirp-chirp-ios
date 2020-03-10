@@ -20,7 +20,7 @@ private let species: [String: String] = [
   "corn_bunting": "Corn Bunting",
   "eurasian_blackcap": "Eurasian Blackcap",
   "eurasian_blue_tit": "Eurasian Blue Tit",
-  "eurasian_skylark": "Eurasian Skylard",
+  "eurasian_skylark": "Eurasian Skylark",
   "eurasian_tree_sparrow": "Eurasian Tree Sparrow",
   "eurasian_wren": "Eurasian Wren",
   "european_robin": "European Robin",

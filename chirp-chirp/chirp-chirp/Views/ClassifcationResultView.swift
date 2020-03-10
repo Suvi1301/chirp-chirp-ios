@@ -16,7 +16,7 @@ struct ClassificationResultView: View {
   
   var body: some View {
       List {
-        ForEach(result, id: \.prob) { prediction in
+        ForEach(result, id: \.image) { prediction in
           ResultRowView(bird: prediction.bird, prob: prediction.prob, image: prediction.image)
         }
         .buttonStyle(PlainButtonStyle())
