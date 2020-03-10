@@ -41,6 +41,10 @@ struct Result {
     guard let result = response["result"] as? [String: Int] else {
         return
     }
+    for (key, value) in result {
+      let pred = Classification(bird: species[key] ?? "unknown", prob: value, image: key)
+      self.classes.append(pred)
+    }
     print(result)
   }
 }

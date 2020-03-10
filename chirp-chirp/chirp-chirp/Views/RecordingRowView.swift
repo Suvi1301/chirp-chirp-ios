@@ -18,8 +18,10 @@ struct RecordingRowView: View {
   var body: some View {
     HStack {
       Text("\(audioURL.lastPathComponent)")
+        .frame(width: UIScreen.main.bounds.size.width/2)
       Spacer()
-      Text("\(audioLength)")
+      Text(String(format: "%.2fs", audioLength))
+        .frame(width: UIScreen.main.bounds.size.width/8)
       Spacer()
       if audioPlayer.isPlaying {
         Button(action: {
@@ -27,21 +29,21 @@ struct RecordingRowView: View {
         }) {
           Image(systemName: "stop")
             .imageScale(.large)
-        }
+        }.frame(width: UIScreen.main.bounds.size.width/8)
       } else {
         Button(action: {
           self.audioPlayer.startPlayback(audio: self.audioURL)
         }) {
           Image(systemName: "play.circle")
             .imageScale(.large)
-        }
+        }.frame(width: UIScreen.main.bounds.size.width/8)
       }
       Spacer()
       NavigationLink(destination: ClassificationResultView(fileURL: self.audioURL)) {
-        Image(systemName: "magnifyingglass.circle.fill")
+        Image(systemName: "magnifyingglass.circle")
           .resizable()
-          .frame(width: 50, height: 50, alignment: .trailing)
-      }
+          .frame(width: 25, height: 25, alignment: .trailing)
+      }.frame(width: UIScreen.main.bounds.size.width/8)
     }
   }
 }

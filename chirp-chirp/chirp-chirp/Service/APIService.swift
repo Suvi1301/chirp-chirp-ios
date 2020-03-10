@@ -19,7 +19,7 @@ class APIService: ObservableObject {
   let objectWillChange = PassthroughSubject<AudioPlayer, Never>()
   let objectWillChng = PassthroughSubject<Result, Never>()
   
-  func predict(fileURL: URL) {
+  func predict(fileURL: URL, completion: @escaping (Result?) -> ()) {
     let fileName = fileURL.lastPathComponent
     guard let audioFile: Data = try? Data (contentsOf: fileURL) else { return }
     Alamofire.upload(multipartFormData: { (multipartFormData) in
@@ -29,7 +29,12 @@ class APIService: ObservableObject {
       case .success(let upload, _, _):
         upload.responseJSON { response in
           if let jsonResponse = response.result.value as? [String: Any] {
-            return self.handleSuccess(jsonResponse)
+            self.handleSuccess(jsonResponse) {
+              (status) in
+              if status != nil {
+                completion(self.result)
+              }
+            }
           }
         }
       case .failure(let encodingError):
@@ -38,12 +43,13 @@ class APIService: ObservableObject {
     })
   }
   
-  func handleSuccess(_ response: [String: Any]) {
+  func handleSuccess(_ response: [String: Any], completion: @escaping (Result?) -> ()) {
     
     guard let result = Result.init(response) else {
       return
     }
-    return self.result = result
+    self.result = result
+    completion(self.result)
   }
   
   func handleError(_ error: Error) {
