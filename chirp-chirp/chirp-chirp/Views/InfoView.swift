@@ -19,7 +19,7 @@ struct InfoView: View {
     VStack {
       Image(self.image)
         .resizable()
-        .frame(width: UIScreen.main.bounds.size.width - 50, height: UIScreen.main.bounds.size.width - 50, alignment: .top)
+        .frame(width: UIScreen.main.bounds.size.width - 50, height: UIScreen.main.bounds.size.width - 50, alignment: .topLeading)
         .padding(.all)
       Text(self.trivia)
     }.navigationBarTitle(self.bird)

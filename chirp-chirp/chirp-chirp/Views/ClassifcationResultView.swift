@@ -13,22 +13,29 @@ struct ClassificationResultView: View {
   @ObservedObject var apiService = APIService()
   @State var fileURL: URL
   @State var result = [Classification]()
+  @State var isLoaded: Bool = false
   
   var body: some View {
+    ZStack {
       List {
         ForEach(result, id: \.image) { prediction in
           ResultRowView(bird: prediction.bird, prob: prediction.prob, image: prediction.image)
         }
         .buttonStyle(PlainButtonStyle())
       }
-      .navigationBarTitle("Predictions")
-      .onAppear(perform: classify)
+      if !isLoaded {
+        Text("Predicting...")
+      }
+    }
+    .navigationBarTitle("Predictions")
+    .onAppear(perform: classify)
   }
   
   func classify() {
     self.apiService.predict(fileURL: self.fileURL) { result in
       if result != nil {
         self.result = result?.classes ?? []
+        self.isLoaded = true
       }
     }
   }
