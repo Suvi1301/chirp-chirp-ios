@@ -40,7 +40,12 @@ struct ContentView: View {
         }
       }
       .navigationBarTitle("Chirp Chirp")
-      .navigationBarItems(trailing: EditButton())
+      .navigationBarItems(leading:
+        NavigationLink(destination: BirdListView()) {
+          Text("Birds")
+        },
+        trailing: EditButton()
+      )
     }
   }
 }

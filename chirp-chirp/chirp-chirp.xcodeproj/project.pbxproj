@@ -30,6 +30,8 @@
 		15DD991023E4D8C900D5E717 /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DD990F23E4D8C900D5E717 /* Recording.swift */; };
 		15DD991223E4DD3B00D5E717 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DD991123E4DD3B00D5E717 /* AudioPlayer.swift */; };
 		15F47DAD23F374F300807BFB /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F47DAC23F374F300807BFB /* APIService.swift */; };
+		15FE7B8B242ACF9B00102755 /* BirdsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FE7B8A242ACF9B00102755 /* BirdsListView.swift */; };
+		15FE7B8D242ACFC900102755 /* BirdListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FE7B8C242ACFC900102755 /* BirdListRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,8 @@
 		15DD990F23E4D8C900D5E717 /* Recording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recording.swift; sourceTree = "<group>"; };
 		15DD991123E4DD3B00D5E717 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		15F47DAC23F374F300807BFB /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		15FE7B8A242ACF9B00102755 /* BirdsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdsListView.swift; sourceTree = "<group>"; };
+		15FE7B8C242ACFC900102755 /* BirdListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdListRowView.swift; sourceTree = "<group>"; };
 		3F9D120157CC99EE6A7661E4 /* Pods-chirp-chirp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chirp-chirp.debug.xcconfig"; path = "Target Support Files/Pods-chirp-chirp/Pods-chirp-chirp.debug.xcconfig"; sourceTree = "<group>"; };
 		48A8B6C707CF50F888DCD229 /* Pods-chirp-chirp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chirp-chirp.release.xcconfig"; path = "Target Support Files/Pods-chirp-chirp/Pods-chirp-chirp.release.xcconfig"; sourceTree = "<group>"; };
 		F42F64E5BE09329060A9E846 /* Pods_chirp_chirp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chirp_chirp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -230,6 +234,8 @@
 				15AA23882415AA2A002BEDB6 /* RecordingRowView.swift */,
 				15AA238C2415B565002BEDB6 /* InfoView.swift */,
 				15D0DD9224170D86003A7C79 /* ResultRowView.swift */,
+				15FE7B8A242ACF9B00102755 /* BirdsListView.swift */,
+				15FE7B8C242ACFC900102755 /* BirdListRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -426,6 +432,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				15DD990C23E4D05B00D5E717 /* RecordingListView.swift in Sources */,
+				15FE7B8D242ACFC900102755 /* BirdListRowView.swift in Sources */,
+				15FE7B8B242ACF9B00102755 /* BirdsListView.swift in Sources */,
 				15AA23872415A3F5002BEDB6 /* ClassifcationResultView.swift in Sources */,
 				158DB5E523FDA9BE0065155D /* Constants+Error.swift in Sources */,
 				15DD990E23E4D33800D5E717 /* Extensions+Date.swift in Sources */,

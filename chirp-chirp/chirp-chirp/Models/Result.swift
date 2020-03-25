@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 import Combine
 
-private let species: [String: String] = [
+let species: [String: String] = [
   "coal_tit": "Coal Tit",
   "common_blackbird": "Common Blackbird",
   "common_chaffinch": "Common Chaffinch",
