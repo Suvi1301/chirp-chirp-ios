@@ -22,7 +22,7 @@ struct ResultRowView: View {
       Spacer()
       Text("\(prob)%").frame(width: UIScreen.main.bounds.size.width/4)
       Spacer()
-      NavigationLink(destination: InfoView(bird: self.bird, image: self.image, trivia:  trivia[self.image] ?? "N/A")) {
+      NavigationLink(destination: InfoView(bird: self.bird, image: self.image, trivia:  trivia[self.image] ?? "N/A", audioURL: Bundle.main.url(forResource: self.image, withExtension: "mp3"))) {
         Image(self.image)
           .resizable()
           .imageScale(.small)

@@ -17,6 +17,25 @@
 		1594D0F9239BE9970073CC84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1594D0F7239BE9970073CC84 /* LaunchScreen.storyboard */; };
 		1594D104239BE9980073CC84 /* chirp_chirpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1594D103239BE9980073CC84 /* chirp_chirpTests.swift */; };
 		1594D10F239BE9980073CC84 /* chirp_chirpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1594D10E239BE9980073CC84 /* chirp_chirpUITests.swift */; };
+		1596D4CD242D8DEA005BB7CF /* eurasian_tree_sparrow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1596D4BA242D8DE8005BB7CF /* eurasian_tree_sparrow.mp3 */; };
+		1596D4CE242D8DEA005BB7CF /* common_blackbird.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1596D4BB242D8DE8005BB7CF /* common_blackbird.mp3 */; };
+		1596D4CF242D8DEA005BB7CF /* yellowhammer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1596D4BC242D8DE8005BB7CF /* yellowhammer.mp3 */; };
+		1596D4D0242D8DEA005BB7CF /* great_tit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1596D4BD242D8DE8005BB7CF /* great_tit.mp3 */; };
+		1596D4D1242D8DEA005BB7CF /* eurasian_wren.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1596D4BE242D8DE9005BB7CF /* eurasian_wren.mp3 */; };
+		1596D4D2242D8DEA005BB7CF /* eurasian_skylark.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1596D4BF242D8DE9005BB7CF /* eurasian_skylark.mp3 */; };
+		1596D4D3242D8DEA005BB7CF /* common_whitethroat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1596D4C0242D8DE9005BB7CF /* common_whitethroat.mp3 */; };
+		1596D4D4242D8DEA005BB7CF /* common_chiffchaff.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1596D4C1242D8DE9005BB7CF /* common_chiffchaff.mp3 */; };
+		1596D4D5242D8DEA005BB7CF /* eurasian_blue_tit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1596D4C2242D8DE9005BB7CF /* eurasian_blue_tit.mp3 */; };
+		1596D4D6242D8DEA005BB7CF /* coal_tit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1596D4C3242D8DE9005BB7CF /* coal_tit.mp3 */; };
+		1596D4D7242D8DEA005BB7CF /* red_crossbill.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1596D4C4242D8DE9005BB7CF /* red_crossbill.mp3 */; };
+		1596D4D8242D8DEA005BB7CF /* tawny_owl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1596D4C5242D8DE9005BB7CF /* tawny_owl.mp3 */; };
+		1596D4D9242D8DEA005BB7CF /* common_nightingale.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1596D4C6242D8DE9005BB7CF /* common_nightingale.mp3 */; };
+		1596D4DA242D8DEA005BB7CF /* corn_bunting.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1596D4C7242D8DE9005BB7CF /* corn_bunting.mp3 */; };
+		1596D4DB242D8DEA005BB7CF /* common_chaffinch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1596D4C8242D8DE9005BB7CF /* common_chaffinch.mp3 */; };
+		1596D4DC242D8DEA005BB7CF /* european_robin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1596D4C9242D8DEA005BB7CF /* european_robin.mp3 */; };
+		1596D4DD242D8DEA005BB7CF /* eurasian_blackcap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1596D4CA242D8DEA005BB7CF /* eurasian_blackcap.mp3 */; };
+		1596D4DE242D8DEA005BB7CF /* great_spotted_woodpecker.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1596D4CB242D8DEA005BB7CF /* great_spotted_woodpecker.mp3 */; };
+		1596D4DF242D8DEA005BB7CF /* song_thrush.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1596D4CC242D8DEA005BB7CF /* song_thrush.mp3 */; };
 		15AA23872415A3F5002BEDB6 /* ClassifcationResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA23862415A3F5002BEDB6 /* ClassifcationResultView.swift */; };
 		15AA23892415AA2A002BEDB6 /* RecordingRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA23882415AA2A002BEDB6 /* RecordingRowView.swift */; };
 		15AA238B2415AE42002BEDB6 /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA238A2415AE42002BEDB6 /* Classification.swift */; };
@@ -67,6 +86,25 @@
 		1594D10A239BE9980073CC84 /* chirp-chirpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "chirp-chirpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1594D10E239BE9980073CC84 /* chirp_chirpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chirp_chirpUITests.swift; sourceTree = "<group>"; };
 		1594D110239BE9980073CC84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1596D4BA242D8DE8005BB7CF /* eurasian_tree_sparrow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = eurasian_tree_sparrow.mp3; sourceTree = "<group>"; };
+		1596D4BB242D8DE8005BB7CF /* common_blackbird.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = common_blackbird.mp3; sourceTree = "<group>"; };
+		1596D4BC242D8DE8005BB7CF /* yellowhammer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yellowhammer.mp3; sourceTree = "<group>"; };
+		1596D4BD242D8DE8005BB7CF /* great_tit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = great_tit.mp3; sourceTree = "<group>"; };
+		1596D4BE242D8DE9005BB7CF /* eurasian_wren.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = eurasian_wren.mp3; sourceTree = "<group>"; };
+		1596D4BF242D8DE9005BB7CF /* eurasian_skylark.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = eurasian_skylark.mp3; sourceTree = "<group>"; };
+		1596D4C0242D8DE9005BB7CF /* common_whitethroat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = common_whitethroat.mp3; sourceTree = "<group>"; };
+		1596D4C1242D8DE9005BB7CF /* common_chiffchaff.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = common_chiffchaff.mp3; sourceTree = "<group>"; };
+		1596D4C2242D8DE9005BB7CF /* eurasian_blue_tit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = eurasian_blue_tit.mp3; sourceTree = "<group>"; };
+		1596D4C3242D8DE9005BB7CF /* coal_tit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coal_tit.mp3; sourceTree = "<group>"; };
+		1596D4C4242D8DE9005BB7CF /* red_crossbill.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = red_crossbill.mp3; sourceTree = "<group>"; };
+		1596D4C5242D8DE9005BB7CF /* tawny_owl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tawny_owl.mp3; sourceTree = "<group>"; };
+		1596D4C6242D8DE9005BB7CF /* common_nightingale.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = common_nightingale.mp3; sourceTree = "<group>"; };
+		1596D4C7242D8DE9005BB7CF /* corn_bunting.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = corn_bunting.mp3; sourceTree = "<group>"; };
+		1596D4C8242D8DE9005BB7CF /* common_chaffinch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = common_chaffinch.mp3; sourceTree = "<group>"; };
+		1596D4C9242D8DEA005BB7CF /* european_robin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = european_robin.mp3; sourceTree = "<group>"; };
+		1596D4CA242D8DEA005BB7CF /* eurasian_blackcap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = eurasian_blackcap.mp3; sourceTree = "<group>"; };
+		1596D4CB242D8DEA005BB7CF /* great_spotted_woodpecker.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = great_spotted_woodpecker.mp3; sourceTree = "<group>"; };
+		1596D4CC242D8DEA005BB7CF /* song_thrush.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song_thrush.mp3; sourceTree = "<group>"; };
 		15AA23862415A3F5002BEDB6 /* ClassifcationResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifcationResultView.swift; sourceTree = "<group>"; };
 		15AA23882415AA2A002BEDB6 /* RecordingRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingRowView.swift; sourceTree = "<group>"; };
 		15AA238A2415AE42002BEDB6 /* Classification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
@@ -162,6 +200,7 @@
 				15DD991323E5026900D5E717 /* Audio */,
 				15F47DAE23F3768E00807BFB /* Service */,
 				15DD991623E5033D00D5E717 /* Extensions */,
+				1596D4B7242D79C6005BB7CF /* SampleAudio */,
 				15AA23902415BE6D002BEDB6 /* Constants */,
 				1594D0F2239BE9970073CC84 /* Assets.xcassets */,
 				1594D0F7239BE9970073CC84 /* LaunchScreen.storyboard */,
@@ -195,6 +234,32 @@
 				1594D110239BE9980073CC84 /* Info.plist */,
 			);
 			path = "chirp-chirpUITests";
+			sourceTree = "<group>";
+		};
+		1596D4B7242D79C6005BB7CF /* SampleAudio */ = {
+			isa = PBXGroup;
+			children = (
+				1596D4C2242D8DE9005BB7CF /* eurasian_blue_tit.mp3 */,
+				1596D4C3242D8DE9005BB7CF /* coal_tit.mp3 */,
+				1596D4BB242D8DE8005BB7CF /* common_blackbird.mp3 */,
+				1596D4C8242D8DE9005BB7CF /* common_chaffinch.mp3 */,
+				1596D4C1242D8DE9005BB7CF /* common_chiffchaff.mp3 */,
+				1596D4C6242D8DE9005BB7CF /* common_nightingale.mp3 */,
+				1596D4C0242D8DE9005BB7CF /* common_whitethroat.mp3 */,
+				1596D4C7242D8DE9005BB7CF /* corn_bunting.mp3 */,
+				1596D4CA242D8DEA005BB7CF /* eurasian_blackcap.mp3 */,
+				1596D4BF242D8DE9005BB7CF /* eurasian_skylark.mp3 */,
+				1596D4BA242D8DE8005BB7CF /* eurasian_tree_sparrow.mp3 */,
+				1596D4BE242D8DE9005BB7CF /* eurasian_wren.mp3 */,
+				1596D4C9242D8DEA005BB7CF /* european_robin.mp3 */,
+				1596D4CB242D8DEA005BB7CF /* great_spotted_woodpecker.mp3 */,
+				1596D4BD242D8DE8005BB7CF /* great_tit.mp3 */,
+				1596D4C4242D8DE9005BB7CF /* red_crossbill.mp3 */,
+				1596D4CC242D8DEA005BB7CF /* song_thrush.mp3 */,
+				1596D4C5242D8DE9005BB7CF /* tawny_owl.mp3 */,
+				1596D4BC242D8DE8005BB7CF /* yellowhammer.mp3 */,
+			);
+			path = SampleAudio;
 			sourceTree = "<group>";
 		};
 		15AA23902415BE6D002BEDB6 /* Constants */ = {
@@ -362,9 +427,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1596D4D8242D8DEA005BB7CF /* tawny_owl.mp3 in Resources */,
+				1596D4CF242D8DEA005BB7CF /* yellowhammer.mp3 in Resources */,
+				1596D4D4242D8DEA005BB7CF /* common_chiffchaff.mp3 in Resources */,
+				1596D4D7242D8DEA005BB7CF /* red_crossbill.mp3 in Resources */,
+				1596D4D5242D8DEA005BB7CF /* eurasian_blue_tit.mp3 in Resources */,
+				1596D4DF242D8DEA005BB7CF /* song_thrush.mp3 in Resources */,
+				1596D4DC242D8DEA005BB7CF /* european_robin.mp3 in Resources */,
 				1594D0F9239BE9970073CC84 /* LaunchScreen.storyboard in Resources */,
+				1596D4DB242D8DEA005BB7CF /* common_chaffinch.mp3 in Resources */,
+				1596D4D9242D8DEA005BB7CF /* common_nightingale.mp3 in Resources */,
+				1596D4DA242D8DEA005BB7CF /* corn_bunting.mp3 in Resources */,
+				1596D4D1242D8DEA005BB7CF /* eurasian_wren.mp3 in Resources */,
+				1596D4D6242D8DEA005BB7CF /* coal_tit.mp3 in Resources */,
+				1596D4D3242D8DEA005BB7CF /* common_whitethroat.mp3 in Resources */,
+				1596D4CE242D8DEA005BB7CF /* common_blackbird.mp3 in Resources */,
+				1596D4DE242D8DEA005BB7CF /* great_spotted_woodpecker.mp3 in Resources */,
+				1596D4D2242D8DEA005BB7CF /* eurasian_skylark.mp3 in Resources */,
+				1596D4DD242D8DEA005BB7CF /* eurasian_blackcap.mp3 in Resources */,
+				1596D4D0242D8DEA005BB7CF /* great_tit.mp3 in Resources */,
 				1594D0F6239BE9970073CC84 /* Preview Assets.xcassets in Resources */,
 				1594D0F3239BE9970073CC84 /* Assets.xcassets in Resources */,
+				1596D4CD242D8DEA005BB7CF /* eurasian_tree_sparrow.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
