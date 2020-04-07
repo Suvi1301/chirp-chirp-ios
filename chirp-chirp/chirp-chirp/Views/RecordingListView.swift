@@ -21,20 +21,19 @@ struct RecordingListView: View {
   var body: some View {
     List {
       Section(header: Text("My Recordings").frame(maxWidth: .infinity, alignment: .center)) {
-        ForEach(audioRecorder.recordings, id: \.createdAt) { recording in
+        ForEach(audioRecorder.recordings.reversed(), id: \.createdAt) { recording in
           RecordingRowView(audioURL: recording.fileURL, audioLength: recording.duration)
           }
           .onDelete(perform: delete)
           .buttonStyle(PlainButtonStyle())
-      
       }
-      }
+    }
   }
   
   func delete(at offsets: IndexSet) {
     var urlsToDelete = [URL]()
     for i in offsets {
-      urlsToDelete.append(audioRecorder.recordings[i].fileURL)
+      urlsToDelete.append(audioRecorder.recordings.reversed()[i].fileURL)
     }
     audioRecorder.deleteRecording(urls: urlsToDelete)
   }
