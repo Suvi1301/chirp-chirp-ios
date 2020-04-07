@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		07CF7131CD1FCD9269C04286 /* Pods_chirp_chirp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42F64E5BE09329060A9E846 /* Pods_chirp_chirp.framework */; };
+		158169B3243D1E520047ED29 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158169B2243D1E520047ED29 /* SplashScreen.swift */; };
+		158169B5243D1E840047ED29 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158169B4243D1E840047ED29 /* MainScreenView.swift */; };
 		15824A26243CC18100207A15 /* Extensions+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15824A25243CC18100207A15 /* Extensions+Color.swift */; };
 		15824A28243CFAF800207A15 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15824A27243CFAF800207A15 /* ActivityIndicator.swift */; };
 		158DB5E523FDA9BE0065155D /* Constants+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158DB5E423FDA9BE0065155D /* Constants+Error.swift */; };
@@ -73,6 +75,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		158169B2243D1E520047ED29 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		158169B4243D1E840047ED29 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
 		15824A25243CC18100207A15 /* Extensions+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+Color.swift"; sourceTree = "<group>"; };
 		15824A27243CFAF800207A15 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		158DB5E423FDA9BE0065155D /* Constants+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Error.swift"; sourceTree = "<group>"; };
@@ -306,6 +310,8 @@
 				15FE7B8A242ACF9B00102755 /* BirdsListView.swift */,
 				15FE7B8C242ACFC900102755 /* BirdListRowView.swift */,
 				15824A27243CFAF800207A15 /* ActivityIndicator.swift */,
+				158169B2243D1E520047ED29 /* SplashScreen.swift */,
+				158169B4243D1E840047ED29 /* MainScreenView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -527,10 +533,12 @@
 				15824A26243CC18100207A15 /* Extensions+Color.swift in Sources */,
 				15824A28243CFAF800207A15 /* ActivityIndicator.swift in Sources */,
 				15AA23872415A3F5002BEDB6 /* ClassifcationResultView.swift in Sources */,
+				158169B3243D1E520047ED29 /* SplashScreen.swift in Sources */,
 				158DB5E523FDA9BE0065155D /* Constants+Error.swift in Sources */,
 				15DD990E23E4D33800D5E717 /* Extensions+Date.swift in Sources */,
 				1594D0ED239BE9970073CC84 /* AppDelegate.swift in Sources */,
 				15DD991223E4DD3B00D5E717 /* AudioPlayer.swift in Sources */,
+				158169B5243D1E840047ED29 /* MainScreenView.swift in Sources */,
 				15D0DD9324170D86003A7C79 /* ResultRowView.swift in Sources */,
 				15AA238F2415B6A4002BEDB6 /* Trivia.swift in Sources */,
 				1594D0EF239BE9970073CC84 /* SceneDelegate.swift in Sources */,
