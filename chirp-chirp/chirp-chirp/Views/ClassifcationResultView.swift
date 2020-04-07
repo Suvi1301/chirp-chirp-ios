@@ -42,6 +42,9 @@ struct ClassificationResultView: View {
       self.apiService.predict(fileURL: self.fileURL) { result in
         if result != nil {
           self.result = result?.classes ?? []
+          self.result = self.result.sorted(by: { (cls1: Classification, cls2: Classification) -> Bool in
+            return cls1.prob > cls2.prob
+          })
           self.isLoaded = true
         }
       }
