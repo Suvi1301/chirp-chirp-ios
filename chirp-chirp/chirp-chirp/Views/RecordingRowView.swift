@@ -45,6 +45,9 @@ struct RecordingRowView: View {
           .frame(width: 25, height: 25, alignment: .trailing)
       }.frame(width: UIScreen.main.bounds.size.width/8)
     }
+    .frame(height: 75)
+    .background(Color(.black).getCellColour())
+    .cornerRadius(20)
+    .listRowBackground(Color(.black).getBackgroundColor())
   }
 }
-
