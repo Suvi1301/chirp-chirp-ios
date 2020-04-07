@@ -20,7 +20,7 @@ struct RecordingListView: View {
   
   var body: some View {
     List {
-      Section(header: Text("My Recordings")) {
+      Section(header: Text("My Recordings").frame(maxWidth: .infinity, alignment: .center)) {
         ForEach(audioRecorder.recordings, id: \.createdAt) { recording in
           RecordingRowView(audioURL: recording.fileURL, audioLength: recording.duration)
           }

@@ -28,7 +28,7 @@ struct BirdListRowView: View {
         Text(bird)
           .frame(alignment: .leading)
           .padding([.leading, .trailing], 10)
-        .foregroundColor(Color(.black).getTextColor())
+          .foregroundColor(.white)
       }
       .frame(maxWidth: UIScreen.main.bounds.size.width, minHeight: 50, alignment: .leading)
       .background(Color(.black).getCellColour())

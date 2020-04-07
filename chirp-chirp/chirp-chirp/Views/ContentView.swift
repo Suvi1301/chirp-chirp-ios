@@ -14,7 +14,15 @@ struct ContentView: View {
   
   init(audioRecorder: AudioRecorder) {
     UITableView.appearance().backgroundColor = UIColor().getBackgroundColor()
-    UINavigationBar.appearance().backgroundColor = UIColor().getBackgroundColor()
+    
+    let navBarAppearance = UINavigationBarAppearance()
+    navBarAppearance.configureWithOpaqueBackground()
+    navBarAppearance.backgroundColor = UIColor().getBackgroundColor()
+    navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+    navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+    UINavigationBar.appearance().standardAppearance = navBarAppearance
+    UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
+    
     self.audioRecorder = audioRecorder
   }
   
@@ -30,11 +38,13 @@ struct ContentView: View {
               Image(systemName: "stop")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(width: 100, height: 100)
+                .frame(width: 75, height: 75)
                 .clipped()
                 .foregroundColor(.red)
-                .padding(.bottom, 40)
+                .padding(.top, 10)
             }
+            Text("Stop Recording")
+              .padding(.bottom, 20)
           } else {
             Button(action: {self.audioRecorder.startRecording()}) {
               Circle()
@@ -42,10 +52,12 @@ struct ContentView: View {
                   Circle()
                     .stroke(Color.white,lineWidth: 2)
                 )
-                .frame(width: 100, height: 100)
+                .frame(width: 75, height: 75)
                 .foregroundColor(.red)
-                .padding(.bottom, 40)
+                .padding(.top, 10)
             }
+            Text("Record")
+              .padding(.bottom, 20)
           }
         }
         .frame(width: UIScreen.main.bounds.size.width, alignment: .center)
