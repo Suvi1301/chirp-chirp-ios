@@ -26,6 +26,7 @@ struct BirdListRowView: View {
           .padding([.top, .bottom, .leading], 10)
         
         Text(bird)
+          .font(.system(.body, design: .rounded)).bold()
           .frame(alignment: .leading)
           .padding([.leading, .trailing], 10)
           .foregroundColor(.white)

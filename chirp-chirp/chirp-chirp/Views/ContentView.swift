@@ -44,6 +44,7 @@ struct ContentView: View {
                 .padding(.top, 10)
             }
             Text("Stop Recording")
+              .font(.system(.body, design: .rounded)).bold()
               .padding(.bottom, 20)
           } else {
             Button(action: {self.audioRecorder.startRecording()}) {
@@ -57,6 +58,7 @@ struct ContentView: View {
                 .padding(.top, 10)
             }
             Text("Record")
+              .font(.system(.body, design: .rounded)).bold()
               .padding(.bottom, 20)
           }
         }
@@ -69,6 +71,7 @@ struct ContentView: View {
       .navigationBarItems(leading:
         NavigationLink(destination: BirdListView()) {
           Text("Birds")
+            .font(.system(.body, design: .rounded)).bold()
             .foregroundColor(.white)
             .padding([.top, .bottom], 5)
             .padding([.leading, .trailing], 10)
