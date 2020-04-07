@@ -32,10 +32,12 @@ struct ClassificationResultView: View {
   }
   
   func classify() {
-    self.apiService.predict(fileURL: self.fileURL) { result in
-      if result != nil {
-        self.result = result?.classes ?? []
-        self.isLoaded = true
+    if !isLoaded {
+      self.apiService.predict(fileURL: self.fileURL) { result in
+        if result != nil {
+          self.result = result?.classes ?? []
+          self.isLoaded = true
+        }
       }
     }
   }
