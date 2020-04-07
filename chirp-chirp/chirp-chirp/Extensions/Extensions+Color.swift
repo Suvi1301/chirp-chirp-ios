@@ -28,4 +28,8 @@ extension Color {
     return Color.init(.sRGB, red: 0.222, green: 0.256, blue: 0.397, opacity: 1)
 //    return Color.init(.sRGB, red: 0, green: 0.586, blue: 0.534, opacity: 1)
   }
+  
+  func getTextColor() -> Color {
+    return Color.init(.sRGB, red: 0.308, green: 0.770, blue: 0.970, opacity: 1)
+  }
 }

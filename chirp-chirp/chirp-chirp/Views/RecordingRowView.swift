@@ -19,6 +19,7 @@ struct RecordingRowView: View {
     HStack {
       Text("\(audioURL.lastPathComponent)")
         .frame(width: UIScreen.main.bounds.size.width/2)
+        .foregroundColor(Color(.black).getTextColor())
       Spacer()
       Text(String(format: "%.2fs", audioLength))
         .frame(width: UIScreen.main.bounds.size.width/8)
@@ -29,6 +30,7 @@ struct RecordingRowView: View {
         }) {
           Image(systemName: "stop")
             .imageScale(.large)
+            .foregroundColor(Color.red)
         }.frame(width: UIScreen.main.bounds.size.width/8)
       } else {
         Button(action: {
@@ -36,6 +38,7 @@ struct RecordingRowView: View {
         }) {
           Image(systemName: "play.circle")
             .imageScale(.large)
+            .foregroundColor(Color.green)
         }.frame(width: UIScreen.main.bounds.size.width/8)
       }
       Spacer()
@@ -43,7 +46,10 @@ struct RecordingRowView: View {
         Image(systemName: "magnifyingglass.circle")
           .resizable()
           .frame(width: 25, height: 25, alignment: .trailing)
-      }.frame(width: UIScreen.main.bounds.size.width/8)
+          .foregroundColor(Color(.black).getTextColor())
+      }
+      .buttonStyle(PlainButtonStyle())
+      .frame(width: UIScreen.main.bounds.size.width/8)
     }
     .frame(height: 75)
     .background(Color(.black).getCellColour())

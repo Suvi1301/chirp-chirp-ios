@@ -14,9 +14,7 @@ struct ContentView: View {
   
   init(audioRecorder: AudioRecorder) {
     UITableView.appearance().backgroundColor = UIColor().getBackgroundColor()
-    UINavigationBar.appearance().tintColor = UIColor().getBackgroundColor()
     UINavigationBar.appearance().backgroundColor = UIColor().getBackgroundColor()
-
     self.audioRecorder = audioRecorder
   }
   
@@ -59,26 +57,26 @@ struct ContentView: View {
       .navigationBarItems(leading:
         NavigationLink(destination: BirdListView()) {
           Text("Birds")
-            .foregroundColor(Color.white)
+            .foregroundColor(.white)
             .padding([.top, .bottom], 5)
             .padding([.leading, .trailing], 10)
             .overlay(
               RoundedRectangle(cornerRadius: 20)
-                .stroke(Color.white, lineWidth: 2)
+                .stroke(Color(.black).getTextColor(), lineWidth: 2)
             )
         },
         trailing:
           EditButton()
-            .foregroundColor(Color.white)
+            .foregroundColor(.white)
             .padding([.top, .bottom], 5)
             .padding([.leading, .trailing], 10)
             .overlay(
               RoundedRectangle(cornerRadius: 20)
-                .stroke(Color.white, lineWidth: 2)
+                .stroke(Color(.black).getTextColor(), lineWidth: 2)
             )
             )
     }
-  .statusBar(hidden: true)
+      .accentColor( .black)
   }
 }
 

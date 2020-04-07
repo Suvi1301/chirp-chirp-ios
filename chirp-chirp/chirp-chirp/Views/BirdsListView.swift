@@ -32,6 +32,14 @@ struct BirdListView: View {
     "yellowhammer",
   ]
   
+  init() {
+    UITableView.appearance().tableFooterView = UIView()
+    UITableView.appearance().separatorStyle = .none
+    UINavigationBar.appearance().tintColor = .white
+    UINavigationBar.appearance().backgroundColor = UIColor().getBackgroundColor()
+    
+  }
+  
   var body: some View {
     List {
       ForEach(self.birds, id: \.self) { bird in
@@ -39,5 +47,11 @@ struct BirdListView: View {
       }
       .buttonStyle(PlainButtonStyle())
     }
+  }
+}
+
+struct BirdsListView_Previews: PreviewProvider {
+  static var previews: some View {
+    BirdListView()
   }
 }
