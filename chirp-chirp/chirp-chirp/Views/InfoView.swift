@@ -18,36 +18,83 @@ struct InfoView: View {
   @ObservedObject var audioPlayer = AudioPlayer()
   
   var body: some View {
-    VStack {
-      Image(self.image)
-        .resizable()
-        .frame(width: UIScreen.main.bounds.size.width - 50, height: UIScreen.main.bounds.size.width - 50, alignment: .topLeading)
-        .padding(.all)
-      Spacer()
-      Text(self.trivia)
-      Spacer()
-      Text("Sample audio for \(self.bird)")
-      if audioPlayer.isPlaying {
-        Button(action: {
-          self.audioPlayer.stopPlayback()
-        }) {
-          Image(systemName: "stop")
-            .imageScale(.large)
-        }.frame(width: UIScreen.main.bounds.size.width/8)
-      } else {
-        Button(action: {
-          guard let x = self.audioURL else {
-            print("Audio url not found!")
-            return
+    
+    ZStack {
+      Color(.black).getBackgroundColor()
+        .edgesIgnoringSafeArea(.all)
+      
+      VStack {
+        Color(.black).getCellColour()
+          .frame(width: UIScreen.main.bounds.size.width - 50, height: UIScreen.main.bounds.size.width - 50, alignment: .topLeading)
+          .overlay(
+        
+            Image(self.image)
+              .resizable()
+              .overlay(
+                Rectangle()
+                  .stroke(Color(.black).getTextColor(), lineWidth: 6)
+              )
+              .padding(.all, 25)
+          )
+          .cornerRadius(20)
+          .padding(.top, 25)
+        
+        Color(.black).getCellColour()
+          .frame(maxWidth: UIScreen.main.bounds.size.width - 50, maxHeight: .infinity, alignment: .topLeading)
+          .overlay(
+            Text(self.trivia)
+            .foregroundColor(.white)
+            .font(.system(.body, design: .rounded)).bold()
+          )
+          .cornerRadius(20)
+      
+        
+        HStack {
+          if audioPlayer.isPlaying {
+            Button(action: {
+              self.audioPlayer.stopPlayback()
+            }) {
+              
+              Rectangle()
+                .frame(width: 50, height: 50)
+                .opacity(0)
+                .overlay(
+                  Image(systemName: "stop")
+                    .resizable()
+                    .foregroundColor(.red)
+                )
+                .padding(.leading, 20)
+            }
+          } else {
+            Button(action: {
+              guard let x = self.audioURL else {
+                print("Audio url not found!")
+                return
+              }
+              self.audioPlayer.startPlayback(audio: x)
+            }) {
+              Circle()
+                .frame(width: 50, height: 50)
+                .opacity(0)
+                .overlay(
+                  Image(systemName: "play.circle")
+                    .resizable()
+                    .foregroundColor(.green)
+                )
+                .padding(.leading, 20)
+            }
           }
-          self.audioPlayer.startPlayback(audio: x)
-        }) {
-          Image(systemName: "play.circle")
-            .imageScale(.large)
-        }.frame(width: UIScreen.main.bounds.size.width/8)
+          Text("Hear me sing!")
+            .foregroundColor(.white)
+            .font(.system(.body, design: .rounded)).bold()
+            .padding(.leading, 50)
+        }
+        .frame(maxWidth: UIScreen.main.bounds.size.width - 50, maxHeight: 100, alignment: .leading)
+        .background(Color(.black).getCellColour())
+        .cornerRadius(20)
       }
-      Spacer()
-    }.navigationBarTitle(self.bird)
+    }
+    .navigationBarTitle(self.bird)
   }
 }
 
