@@ -24,7 +24,13 @@ struct ClassificationResultView: View {
         .buttonStyle(PlainButtonStyle())
       }
       if !isLoaded {
-        Text("Predicting...")
+        VStack {
+          ActivityIndicator()
+            .frame(width: 50, height: 50)
+          Text("Predicting")
+            .font(.system(.body, design: .rounded)).bold()
+            .foregroundColor(.white)
+        }.foregroundColor(Color(.black).getTextColor())
       }
     }
     .navigationBarTitle("Predictions")
@@ -32,10 +38,15 @@ struct ClassificationResultView: View {
   }
   
   func classify() {
-    self.apiService.predict(fileURL: self.fileURL) { result in
-      if result != nil {
-        self.result = result?.classes ?? []
-        self.isLoaded = true
+    if !isLoaded {
+      self.apiService.predict(fileURL: self.fileURL) { result in
+        if result != nil {
+          self.result = result?.classes ?? []
+          self.result = self.result.sorted(by: { (cls1: Classification, cls2: Classification) -> Bool in
+            return cls1.prob > cls2.prob
+          })
+          self.isLoaded = true
+        }
       }
     }
   }

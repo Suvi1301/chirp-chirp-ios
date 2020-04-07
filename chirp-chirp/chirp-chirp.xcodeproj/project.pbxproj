@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		07CF7131CD1FCD9269C04286 /* Pods_chirp_chirp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42F64E5BE09329060A9E846 /* Pods_chirp_chirp.framework */; };
+		15824A26243CC18100207A15 /* Extensions+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15824A25243CC18100207A15 /* Extensions+Color.swift */; };
+		15824A28243CFAF800207A15 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15824A27243CFAF800207A15 /* ActivityIndicator.swift */; };
 		158DB5E523FDA9BE0065155D /* Constants+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158DB5E423FDA9BE0065155D /* Constants+Error.swift */; };
 		1594D0ED239BE9970073CC84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1594D0EC239BE9970073CC84 /* AppDelegate.swift */; };
 		1594D0EF239BE9970073CC84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1594D0EE239BE9970073CC84 /* SceneDelegate.swift */; };
@@ -71,6 +73,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15824A25243CC18100207A15 /* Extensions+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+Color.swift"; sourceTree = "<group>"; };
+		15824A27243CFAF800207A15 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		158DB5E423FDA9BE0065155D /* Constants+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Error.swift"; sourceTree = "<group>"; };
 		1594D0E9239BE9970073CC84 /* chirp-chirp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chirp-chirp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1594D0EC239BE9970073CC84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -301,6 +305,7 @@
 				15D0DD9224170D86003A7C79 /* ResultRowView.swift */,
 				15FE7B8A242ACF9B00102755 /* BirdsListView.swift */,
 				15FE7B8C242ACFC900102755 /* BirdListRowView.swift */,
+				15824A27243CFAF800207A15 /* ActivityIndicator.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -309,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				15DD990D23E4D33800D5E717 /* Extensions+Date.swift */,
+				15824A25243CC18100207A15 /* Extensions+Color.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -518,6 +524,8 @@
 				15DD990C23E4D05B00D5E717 /* RecordingListView.swift in Sources */,
 				15FE7B8D242ACFC900102755 /* BirdListRowView.swift in Sources */,
 				15FE7B8B242ACF9B00102755 /* BirdsListView.swift in Sources */,
+				15824A26243CC18100207A15 /* Extensions+Color.swift in Sources */,
+				15824A28243CFAF800207A15 /* ActivityIndicator.swift in Sources */,
 				15AA23872415A3F5002BEDB6 /* ClassifcationResultView.swift in Sources */,
 				158DB5E523FDA9BE0065155D /* Constants+Error.swift in Sources */,
 				15DD990E23E4D33800D5E717 /* Extensions+Date.swift in Sources */,

@@ -12,20 +12,28 @@ struct RecordingListView: View {
   
   @ObservedObject var audioRecorder: AudioRecorder
   
+  init(audioRecorder: AudioRecorder) {
+    UITableView.appearance().tableFooterView = UIView()
+    UITableView.appearance().separatorStyle = .none
+    self.audioRecorder = audioRecorder
+  }
+  
   var body: some View {
     List {
-      ForEach(audioRecorder.recordings, id: \.createdAt) { recording in
-        RecordingRowView(audioURL: recording.fileURL, audioLength: recording.duration)
+      Section(header: Text("My Recordings").frame(maxWidth: .infinity, alignment: .center)) {
+        ForEach(audioRecorder.recordings.reversed(), id: \.createdAt) { recording in
+          RecordingRowView(audioURL: recording.fileURL, audioLength: recording.duration)
+          }
+          .onDelete(perform: delete)
+          .buttonStyle(PlainButtonStyle())
       }
-      .onDelete(perform: delete)
-      .buttonStyle(PlainButtonStyle())
     }
   }
   
   func delete(at offsets: IndexSet) {
     var urlsToDelete = [URL]()
     for i in offsets {
-      urlsToDelete.append(audioRecorder.recordings[i].fileURL)
+      urlsToDelete.append(audioRecorder.recordings.reversed()[i].fileURL)
     }
     audioRecorder.deleteRecording(urls: urlsToDelete)
   }

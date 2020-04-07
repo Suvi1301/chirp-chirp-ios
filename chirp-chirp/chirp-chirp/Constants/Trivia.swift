@@ -15,7 +15,7 @@ let trivia: [String: String] = [
   Length: 11.5cm
   Wingspan: 17-21cm
   Weight: 8-10g
-  Food: Insects, seeds and nuts
+  Food: Insects, seeds and nuts.
   """,
   
   "common_blackbird": """
@@ -24,7 +24,7 @@ let trivia: [String: String] = [
   Length: 24-25cm
   Wingspan: 34-38.5cm
   Weight: 80-100g
-  Food: Insects, worms and berries
+  Food: Insects, worms and berries.
   """,
   
   "common_chaffinch": """
@@ -33,7 +33,7 @@ let trivia: [String: String] = [
   Length: 14.5cm
   Wingspan: 24.5-28.5cm
   Weight: 18-29g
-  Food: Insects and seeds
+  Food: Insects and seeds.
   """,
   
   "common_chiffchaff": """
@@ -42,7 +42,7 @@ let trivia: [String: String] = [
   Length: 10-11cm
   Wingspan: 15-21cm
   Weight: 6-10g
-  Food: Insects and spiders
+  Food: Insects and spiders.
   """,
   
   "common_nightingale":  """
@@ -60,7 +60,7 @@ let trivia: [String: String] = [
   Length: 14cm
   Wingspan: 18.5-23cm
   Weight: 12-18g
-  Food: Insects, and berries and fruit in autumn
+  Food: Insects, and berries and fruit in autumn.
   """,
   
   "corn_bunting": """
@@ -69,7 +69,7 @@ let trivia: [String: String] = [
   Length: 18cm
   Wingspan: 26-32cm
   Weight: 35-56g
-  Food: Seeds and insects
+  Food: Seeds and insects.
   """,
   
   "eurasian_blackcap": """
@@ -78,7 +78,7 @@ let trivia: [String: String] = [
   Length: 13cm
   Wingspan: 20-23cm
   Weight: 21g
-  Food: Insects and berries
+  Food: Insects and berries.
   """,
   
   "eurasian_blue_tit": """
@@ -87,7 +87,7 @@ let trivia: [String: String] = [
   Length: 12cm
   Wingspan: 18cm
   Weight: 11g
-  Food: Insects, caterpillars, seeds and nuts
+  Food: Insects, caterpillars, seeds and nuts.
   """,
   
   "eurasian_skylark": """
@@ -96,7 +96,7 @@ let trivia: [String: String] = [
   Length: 18-19cm
   Wingspan: 30-36cm
   Weight: 33-45g
-  Food: Seeds and insects
+  Food: Seeds and insects.
   """,
   
   "eurasian_tree_sparrow": """
@@ -105,7 +105,7 @@ let trivia: [String: String] = [
   Length: 14cm
   Wingspan: 20-22cm
   Weight: 19-25g
-  Food: Insects and insects
+  Food: Insects and insects.
   """,
   
   "eurasian_wren": """
@@ -114,7 +114,7 @@ let trivia: [String: String] = [
   Length: 9-10cm
   Wingspan: 13-17cm
   Weight: 7-12g
-  Food: Insects and spiders
+  Food: Insects and spiders.
   """,
   
   "european_robin": """
@@ -123,7 +123,7 @@ let trivia: [String: String] = [
   Length: 14cm
   Wingspan: 20-22cm
   Weight: 14-21g
-  Food: Worms, seeds, fruits, insects and other invertebrates
+  Food: Worms, seeds, fruits, insects and other invertebrates.
   """,
   
   "great_spotted_woodpecker": """
@@ -132,7 +132,7 @@ let trivia: [String: String] = [
   Length: 22-23cm
   Wingspan: 34-39cm
   Weight: 85g
-  Food: Insects, seeds and nuts
+  Food: Insects, seeds and nuts.
   """,
   
   "great_tit": """
@@ -141,7 +141,7 @@ let trivia: [String: String] = [
   Length: 14cm
   Wingspan: 24cm
   Weight: 18g
-  Food: Insects, seeds and nuts
+  Food: Insects, seeds and nuts.
   """,
   
   "red_crossbill": """
@@ -150,7 +150,7 @@ let trivia: [String: String] = [
   Length: 16.5cm
   Wingspan: 27-30.5cm
   Weight: 35-50g
-  Food: Seeds from conifers
+  Food: Seeds from conifers.
   """,
   
   "song_thrush": """
@@ -159,7 +159,7 @@ let trivia: [String: String] = [
   Length: 23cm
   Wingspan: 33-36cm
   Weight: 65-100g
-  Food: Worms, snails and fruit
+  Food: Worms, snails and fruit.
   """,
   
   "tawny_owl": """
@@ -168,7 +168,7 @@ let trivia: [String: String] = [
   Length: 37-39cm
   Wingspan: 94-104cm
   Weight: 330-590g
-  Food: Small mammals and rodents, small birds, frogs, fish, insects and worms
+  Food: Small mammals and rodents, small birds, frogs, fish, insects and worms.
   """,
   
   "yellowhammer": """
@@ -177,6 +177,6 @@ let trivia: [String: String] = [
   Length: 16-16.5cm
   Wingspan: 23-29.5cm
   Weight: 25-36g
-  Food: Seeds and insects
+  Food: Seeds and insects.
   """,
 ]

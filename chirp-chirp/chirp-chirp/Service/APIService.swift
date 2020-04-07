@@ -24,7 +24,7 @@ class APIService: ObservableObject {
     guard let audioFile: Data = try? Data (contentsOf: fileURL) else { return }
     Alamofire.upload(multipartFormData: { (multipartFormData) in
       multipartFormData.append(audioFile, withName: "audio-sample", fileName: fileName, mimeType: "audio/m4a")
-    }, to: "http://90.221.3.135:5000/predict", encodingCompletion: { encodingResult in
+    }, to: "http://5.68.249.49:5000/predict", encodingCompletion: { encodingResult in
       switch encodingResult {
       case .success(let upload, _, _):
         upload.responseJSON { response in
