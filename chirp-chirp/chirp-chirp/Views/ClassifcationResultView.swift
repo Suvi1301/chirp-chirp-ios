@@ -24,7 +24,13 @@ struct ClassificationResultView: View {
         .buttonStyle(PlainButtonStyle())
       }
       if !isLoaded {
-        Text("Predicting...")
+        VStack {
+          ActivityIndicator()
+            .frame(width: 50, height: 50)
+          Text("Predicting")
+            .font(.system(.body, design: .rounded)).bold()
+            .foregroundColor(.white)
+        }.foregroundColor(Color(.black).getTextColor())
       }
     }
     .navigationBarTitle("Predictions")
