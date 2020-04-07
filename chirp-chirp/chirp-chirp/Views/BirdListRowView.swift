@@ -35,10 +35,9 @@ struct BirdListRowView: View {
       .background(Color(.black).getCellColour())
       .cornerRadius(20)
     }
-    .buttonStyle(PlainButtonStyle())
     .frame(maxWidth: UIScreen.main.bounds.size.width, minHeight: 50)
     .listRowBackground(Color(.black).getBackgroundColor())
-  .navigationBarTitle("Birds")
+    .navigationBarTitle("Birds")
   }
 }
 
