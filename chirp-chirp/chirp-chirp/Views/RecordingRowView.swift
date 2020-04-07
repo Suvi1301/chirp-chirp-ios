@@ -24,6 +24,7 @@ struct RecordingRowView: View {
       Spacer()
       Text(String(format: "%.1fs", audioLength))
         .font(.system(.body, design: .rounded)).bold()
+        .foregroundColor(.white)
         .frame(width: UIScreen.main.bounds.size.width/8)
       Spacer()
       if audioPlayer.isPlaying {

@@ -45,6 +45,7 @@ struct ContentView: View {
             }
             Text("Stop Recording")
               .font(.system(.body, design: .rounded)).bold()
+              .foregroundColor(.white)
               .padding(.bottom, 20)
           } else {
             Button(action: {self.audioRecorder.startRecording()}) {
@@ -59,6 +60,7 @@ struct ContentView: View {
             }
             Text("Record")
               .font(.system(.body, design: .rounded)).bold()
+              .foregroundColor(.white)
               .padding(.bottom, 20)
           }
         }
